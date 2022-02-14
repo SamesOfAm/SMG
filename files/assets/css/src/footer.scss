@@ -1,1 +1,158 @@
-@import "variables";
+@import 'variables';
+
+#footer{
+  padding: 0 20px;
+  background-color: $dark;
+  background-size: cover;
+  background-image: url("../layout/bricks_wall_v2.jpg");
+  //background-image: url("../layout/burger.jpg");
+  a,p,h1,h2,h3,h4,h5,h6 {
+    color: white;
+    font-weight: normal;
+  }
+  a {
+    font-family: "Courier Prime";
+  }
+  .inside{
+    width: 900px;
+    margin: 0 auto;
+  }
+  p{
+    top: 20px;
+  }
+}
+
+.mobile-size{
+  img{
+    width: 1234px;
+  }
+}
+
+///////////////////wird Mobile ausgeblendet
+@media (max-width: 1217px) {
+  #footer{
+    width: 100%
+  }
+  #footer .inside {
+    width: inherit;
+  }
+
+}
+
+.space{
+  margin-bottom: 20px;
+}
+
+.white_line {
+  margin-right: 10px;
+}
+
+.logo{
+  clear: both;
+  width: 200px;
+  padding-bottom: 100px;
+  padding-top: 100px;
+}
+
+
+.submit{/*___________________________aktive fläche*/
+  width:100%;
+}
+
+.ce_form{
+  position: relative;
+  float: right;
+  width: 430px;
+  .formbody{
+    margin: 0 auto;
+    padding-top: 120px;
+    .widget.widget-text, .widget.widget-textarea {
+      margin: 0 auto;
+    }
+  }
+}
+
+
+
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+select, textarea, input[type="text"], input[type="email"], input[type="tel"]{
+  display: inline-block;
+  height: 36px;
+  margin-bottom: 10px;
+  padding: 15px;
+  font-size: 14px;
+  line-height: 20px;
+  color: #ffffff;
+  vertical-align: middle;
+  width: 100%;
+  background-color: #414141;
+  font-style: italic;
+  font-family: "Courier Prime", serif;
+  border: none;
+  transition: background-color 250ms;
+  cursor: pointer;
+  &:hover {
+    background-color: #515151;
+  }
+}
+
+textarea {
+  height: 150px;
+}
+
+/*___________________________________________Button_Hover_Effekt_Absende-Button*/
+
+.widget-submit {
+  //color: rgb(97, 97, 97);
+  -webkit-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+  -o-transition: all 0.5s;
+  transition: all 0.5s;
+  position: relative;
+  float: right;
+  margin-top: 10px;
+}
+.widget-submit button{
+  font-family: "Courier Prime";
+  font-size: 16px;
+  color: #ffffff;
+  text-decoration: none;
+  display: block;
+  background-color: gray;
+  border: none;
+  width: 187px;
+  height: 45px;
+  cursor: pointer;
+  float: right;
+  transition: background-color 250ms;
+  &:hover {
+    background-color: #9f9f9f;
+  }
+}
+.widget-submit:hover {
+  //background-color: orange;
+}
+
+@media screen and (max-width: 1217px) {
+  #footer {
+    padding: 0;
+    .inside {
+      width: 90%;
+    }
+  }
+
+  .ce_form .formbody {
+    padding-top: 40px;
+  }
+}
+
+@media screen and (min-width: 1234px){
+  #insta-mobile{
+    display: none;
+  }
+}

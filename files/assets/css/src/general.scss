@@ -1,11 +1,82 @@
+
 @import 'variables';
+@font-face {
+  font-family: Roboto;
+}
+
+@font-face {
+  font-family: 'Nanami Bold';
+  src: url("../font/3ADB68_0_0.woff") format('woff');
+}
 
 
+
+h2, h1{
+  font-family: 'Nanami Bold';
+  font-size: 32pt;
+  letter-spacing: 1px;
+}
+
+a {
+  font-family: 'Nanami Bold';
+  font-weight: 100;
+  font-style: normal;
+  color: $dark;
+  text-decoration: none;
+}
+
+p {
+  font-family: "Courier Prime";
+  color: $dark;
+  line-height: 16pt;
+}
+
+.flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 15px auto 0;
+}
+
+.ce_hyperlink{
+  width: unset;
+}
+
+.datenschutz{
+  p {
+    max-width: 700px;
+    text-align: center;
+    margin-left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+  }
+  h1 {
+
+  }
+  //@include center;
+  padding-top: 11vh;
+}
+
+.ce_hyperlink{
+  text-align: center;
+  padding: 20px;
+}
+
+.bild{
+  max-width: 300px;
+  padding-top: 50px;
+  @include center;
+}
+
+.caption{
+  display: none;
+}
+
+.blocked a{
+  color: #262626 !important;
+}
 
 @import 'header';
-@import 'footer';
 @import 'main';
-@import 'menu';
-@import "newsletter";
-@import "respo";
-
+@import 'footer';
+@import 'over_18';

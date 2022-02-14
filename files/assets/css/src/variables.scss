@@ -1,0 +1,20 @@
+$primary-color: black;
+$content_size: 100%;
+$dark: #262626;
+
+@mixin flex {
+  // write the css here
+  display: -webkit-flex;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 15px auto 0;
+}
+
+@mixin center {
+  display: -webkit-flex;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+}
