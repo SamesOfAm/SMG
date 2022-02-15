@@ -2,12 +2,11 @@
 <project version="4">
   <component name="WebServers">
     <option name="servers">
-      <webServer id="424f3d51-2956-4ebd-afa5-c781c9bdce32" name="Brick-Gin" url="http://www.brickgin.com.auf.parzival.iks-jena.de">
-        <fileTransfer host="www.brickgin.com.auf.parzival.iks-jena.de" port="21" rootFolder="/contao">
+      <webServer id="581a9770-5f59-4c42-a2bd-b4f246a290a0" name="Server" url="http://ftp.digital-concept.eu">
+        <fileTransfer rootFolder="/contao4" host="ftp.digital-concept.eu" port="21">
           <advancedOptions>
             <advancedOptions dataProtectionLevel="Private" passiveMode="true" shareSSLContext="true" />
           </advancedOptions>
-          <option name="port" value="21" />
         </fileTransfer>
       </webServer>
     </option>

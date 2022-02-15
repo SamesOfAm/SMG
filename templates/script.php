@@ -23,7 +23,7 @@
         })
     });
 
-    let headerFixed = false;
+    /*let headerFixed = false;
     jQuery(window).scroll(function(){
         const scrolled = jQuery(window).scrollTop();
         const header = document.getElementById('header');
@@ -54,7 +54,7 @@
             langSelect.style.top = "-5px";
             headerFixed = false;
         }
-    });
+    });*/
 
     jQuery(document).ready(function(){
         // document.querySelector('.to-top-button').hide();
