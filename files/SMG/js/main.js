@@ -215,3 +215,8 @@ function stopCarousel() {
 	owl.trigger('destroy.owl.carousel');
 	jQuery('.owl-stage-outer > .layout_short_publikationen:first-child').unwrap();
 }
+
+if(document.querySelector('.mod_search')) {
+	const searchModule = document.querySelector('.mod_search');
+	console.log(searchModule);
+}

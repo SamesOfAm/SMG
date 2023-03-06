@@ -2113,16 +2113,6 @@ a.rvs-nav-next {
 	width:auto;
 }
 
-.mod_navigation {
-	position:absolute;
-	z-index:999;
-	top:85px;
-	width:100%;
-	min-height:100%;
-	background:#333;
-	padding-bottom:115px;
-}
-
 .inside-wrapper-special {
 	position:relative;
 	margin-left:-10px;
