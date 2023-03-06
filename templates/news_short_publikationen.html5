@@ -1,0 +1,15 @@
+
+<div class="layout_short_publikationen arc_<?php echo $this->archive->id ?> block<?php echo $this->class ?>" itemscope itemtype="http://schema.org/Article">
+	<div class="short_publikationen_inside">
+		<div class="publikationen-icon"><img src="files/SMG/img/publikationen-icon.png" alt="" /></div>
+		<?php if ($this->hasMetaFields): ?>
+		<p class="info"><?php echo date('d.m.Y',strtotime($this->date)) ?></p>
+		<?php endif; ?>
+		
+		<h2 itemprop="name"><?php echo $this->linkHeadline ?></h2>
+		
+		<div class="ce_text block" itemprop="description">
+		<?php echo $this->teaser ?>
+		</div>
+  </div>
+</div>

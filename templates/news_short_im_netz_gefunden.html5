@@ -1,0 +1,18 @@
+
+<div class="layout_short_im_netz_gefunden arc_<?php echo $this->archive->id ?> block<?php echo $this->class ?>" itemscope itemtype="http://schema.org/Article">
+	<div class="short_im_netz_gefunden_inside">
+		<?php if ($this->hasMetaFields): ?>
+		<p class="info"><?php echo date('d.m.Y',strtotime($this->date)) ?></p>
+		<?php endif; ?>
+				
+		<?php if ($this->addImage): ?>
+			<?php $this->insert('image', $this->arrData); ?>
+		<?php endif; ?>
+		<div class="im_netz_gefunden_layer">
+			<h2 itemprop="name"><span class="title-arrow"></span><?php echo $this->linkHeadline ?></h2>
+			<div class="ce_text block" itemprop="description">
+			<?php echo $this->teaser ?>
+			</div>
+		</div>
+  </div>
+</div>
