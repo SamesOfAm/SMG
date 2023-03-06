@@ -1479,12 +1479,12 @@ a.rvs-nav-next {
 .text_normal_wrapper .ce_text h1,
 .vorstand_wrapper .ce_text h1 {
 	font-size:62px;
-	margin:0px;
 	padding:0px;
-	margin-bottom:5px;
+	margin: 0px;
 	text-transform:none;
 	font-family:'Bree Serif';
 	font-weight:400;
+	margin-bottom: 5px;
 }
 
 .mod_newsreader h2,
