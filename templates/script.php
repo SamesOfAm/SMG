@@ -162,6 +162,8 @@
     })
 
     backButton.addEventListener('click', function() {
+      /*console.log(currentQuestion);
+      console.log(amounts[currentQuestion-1])*/;
       score = score-amounts[currentQuestion-1];
       currentQuestion--;
       amounts.splice(-1);
@@ -170,6 +172,9 @@
       }
       progressBar.style.width = currentQuestion * 100 / 25 + '%';
       question.innerHTML = questions[currentQuestion];
+      /*console.log('Current question: ', currentQuestion);
+      console.log('Current score: ', score);
+      console.log('Amounts: ', amounts);*/
     })
 
     allAnswers.forEach(answer => {
