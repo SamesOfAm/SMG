@@ -6,7 +6,6 @@
     const vh = Math.max(document.documentElement.clientHeight, window.innerHeight || 0);
 
     const scrollSmoothly = (e) => {
-        console.log(e.target.parentElement.hash);
         let anchorElement = e.target;
         if (e.target.parentElement.nodeName === 'A') {
             anchorElement = e.target.parentElement;
@@ -63,9 +62,7 @@
         const allSearchForms = document.querySelectorAll('.mod_search');
         allSearchForms.forEach(form => {
             const searchInput = form.querySelector('input');
-            console.log(searchInput);
             searchInput.addEventListener('change', function() {
-                console.log('Changing');
                 searchInput.value = "*" + searchInput.value + "*";
             })
         })
@@ -90,7 +87,7 @@
 
     // SELBSTTEST
 
-    const selfTestContainer = document.getElementById('self-test');
+    /*const selfTestContainer = document.getElementById('self-test');
     const question = document.getElementById('question');
     const answerContainer = document.querySelector('.answers');
     const allAnswers = document.querySelectorAll('.answers div');
@@ -130,6 +127,8 @@
       "{{insert_content::697}}"
     ];
 
+    console.log(questions);
+
     const outcomes = [
       "{{insert_content::698}}",
       "{{insert_content::699}}",
@@ -162,8 +161,8 @@
     })
 
     backButton.addEventListener('click', function() {
-      /*console.log(currentQuestion);
-      console.log(amounts[currentQuestion-1])*/;
+      /!*console.log(currentQuestion);
+      console.log(amounts[currentQuestion-1])*!/;
       score = score-amounts[currentQuestion-1];
       currentQuestion--;
       amounts.splice(-1);
@@ -172,9 +171,9 @@
       }
       progressBar.style.width = currentQuestion * 100 / 25 + '%';
       question.innerHTML = questions[currentQuestion];
-      /*console.log('Current question: ', currentQuestion);
+      /!*console.log('Current question: ', currentQuestion);
       console.log('Current score: ', score);
-      console.log('Amounts: ', amounts);*/
+      console.log('Amounts: ', amounts);*!/
     })
 
     allAnswers.forEach(answer => {
@@ -191,6 +190,6 @@
         }
         progressBar.style.width = currentQuestion * 100 / 25 + '%';
       })
-    })
+    })*/
 
 </script>

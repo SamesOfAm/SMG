@@ -1,0 +1,11 @@
+
+<!-- indexer::stop -->
+<nav class="<?= $this->class ?> block"<?= $this->cssID ?><?php if ($this->style): ?> style="<?= $this->style ?>"<?php endif; ?> itemscope itemtype="http://schema.org/SiteNavigationElement">
+	<div class="inside-wrapper">
+		<div class="inside-wrapper-special">
+			<?= $this->items ?>
+			<div class="clearfix"></div>		
+		</div>
+	</div>
+</nav>
+<!-- indexer::continue -->

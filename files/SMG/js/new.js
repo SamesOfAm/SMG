@@ -5,7 +5,7 @@ jQuery(document).ready(function($) {
     jQuery('#footer .mod_form').appendTo('#footer .footer-bottom .inner');
     jQuery('#footer .mod_customnav').appendTo('#footer .footer-bottom .inner');
     jQuery('#footer .inner').append('<div class="clearfix"></div>');
-    jQuery('.mod_breadcrumb').insertAfter(document.querySelector('.mod_article'));
+    // jQuery('.mod_breadcrumb').insertAfter(document.querySelector('.mod_article'));
     setTimeout(function () {
         jQuery('.rvs-nav-container-dots').append(jQuery('.rvs-nav-container').clone());
         jQuery('.rvs-nav-container-dots .rvs-nav-item').removeAttr('style');

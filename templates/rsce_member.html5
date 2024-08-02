@@ -1,0 +1,17 @@
+<div class="member <?php if($this->description): ?>with-info<?php endif; ?>">
+    <?php if($this->logo): ?>
+        <div class="member-logo">
+            {{image::<?= $this->logo ?>}}
+        </div>
+    <?php endif; ?>
+    <div class="member-name">
+        <h3><?= $this->name ?></h3>
+    </div>
+    <?php if($this->description): ?>
+        <div class="member-info">
+            <div class="member-info-close">&times;</div>
+            <?= $this->description ?>
+            <?php if($this->link): ?><a href="<?= $this->link ?>"><span class="external-link-icon"></span>Link zur Unternehmenswebsite</a><?php endif; ?>
+        </div>
+    <?php endif; ?>
+</div>
