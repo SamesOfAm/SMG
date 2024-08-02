@@ -151,6 +151,7 @@
 	.white1 .row1 {
 		max-width:750px;
 	}
+
 	
 	.inside-wrapper:after {
 		display:none;
@@ -862,7 +863,7 @@
 	}
 	
 	.white1_short_wrapper > .rr1 {
-		width:calc(10% -30px) !important;
+		width:calc(10% - 30px) !important;
 		margin:0 !important;
 		padding:0 !important;
 	}

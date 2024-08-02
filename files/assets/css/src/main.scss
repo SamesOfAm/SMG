@@ -323,6 +323,27 @@
 }
 
 
+#main .stoerer {
+  position: absolute;
+  top: 5vw;
+  right: 10vw;
+  z-index: 1;
+  .ce_image {
+    img {
+      width: 260px;
+      transition: rotate 250ms;
+      height: auto;
+      &:hover {
+        rotate: 14deg;
+      }
+    }
+  }
+}
+
+#container .white1 .row1 p a {
+  font-family: 'Bree Serif';
+}
+
 ////////////////////////Desktop
 
 
@@ -424,6 +445,14 @@ table{
     text-align: center;
    // margin-left: 25%;
   }
+  #main .stoerer {
+    .ce_image {
+      img {
+        width: 150px;
+      }
+    }
+  }
+
 }
 
 @media screen and (max-width: 767px) { //767
@@ -438,6 +467,10 @@ table{
 
   .mobile-only {
     display: block;
+  }
+
+  #main .stoerer {
+    display: none;
   }
 
 }
