@@ -11,7 +11,7 @@
         <div class="member-info">
             <div class="member-info-close">&times;</div>
             <?= $this->description ?>
-            <?php if($this->link): ?><a href="<?= $this->link ?>"><span class="external-link-icon"></span>Link zur Unternehmenswebsite</a><?php endif; ?>
+            <?php if($this->link): ?><a target="_blank" href="<?= $this->link ?>"><span class="external-link-icon"></span>Link zur Unternehmenswebsite</a><?php endif; ?>
         </div>
     <?php endif; ?>
 </div>
