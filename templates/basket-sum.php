@@ -6,5 +6,5 @@
     <p><span class="basket-sum-span"></span> EUR (inkl. MwSt)</p>
 </div>
 <div class="keep-shopping">
-    <p><a class="shop-button" href="{{link_url::8}}">Weiter shoppen</a></p>
+    <p><a class="shop-button" href="{{link_url::116}}">Weiter shoppen</a></p>
 </div>

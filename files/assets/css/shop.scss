@@ -1,3 +1,17 @@
+#main textarea, #main input[type="text"] {
+  color: white;
+}
+
+.mod_article.shop-intro {
+  width: 90%;
+  max-width: 1100px;
+  .ce_text {
+    h1 {
+      color: #c99c00;
+    }
+  }
+}
+
 .mod_article:not(:first-child).shop-list {
   width: 90%;
   max-width: 1100px;
@@ -31,7 +45,7 @@
     overflow: hidden;
     .list-image {
       height: 0;
-      padding-bottom: 75%;
+      padding-bottom: 100%;
       transition: transform 500ms;
     }
   }
@@ -40,7 +54,8 @@
   }
 }
 
-.shop-item.detail {
+#main .shop-item.detail {
+  display: flex;
   .hero-image {
     .content-swiper {
       width: 100%;
@@ -91,6 +106,7 @@
     h1 {
       font-size: 22px;
       text-transform: uppercase;
+      font-family: 'Open Sans', sans-serif;
     }
     p {
       line-height: 1.5em;
@@ -102,9 +118,67 @@
   > p {
     margin: 30px 0;
   }
+  .shop-item-detail-left {
+    width: 50%;
+    .slider-control > a {
+      &.slider-prev,&.slider-next {
+        top: 50%;
+        transform: translateY(-50%);
+      }
+    }
+  }
+  .shop-item-detail-right {
+    width: 50%;
+    padding: 10px 50px;
+    h1 {
+      margin-bottom: 20px;
+    }
+    p {
+      margin: 40px 0;
+    }
+    .current-basket-info {
+      margin-top: 40px;
+      p {
+        margin: 20px 0;
+      }
+    }
+  }
 }
 
-.shop-item.basket {
+#main .basket-wrapper {
+  width: 90%;
+  margin: 0 auto;
+  max-width: 1100px;
+  .ce_form {
+    margin-top: 200px;
+    h2 {
+      font-family: 'Open Sans', sans-serif;
+    }
+    .formbody {
+      .widget {
+        max-width: initial;
+      }
+      .widget-submit button {
+        background: none;
+        color: #2e8bb6;
+        font-family: 'Open Sans', sans-serif;
+        float: none;
+        text-transform: uppercase;
+        width: auto;
+        padding: 12px;
+        font-weight: bold;
+        border: 2px solid black;
+        transition: color 250ms;
+        &:hover {
+          color: #c99c00;
+        }
+      }
+    }
+  }
+}
+
+
+#container .shop-item.basket {
   display: none;
   margin: 20px 0;
   padding: 0 0 20px;
@@ -197,7 +271,7 @@
     opacity: 0;
   }
   &:hover {
-    color: #29676A;
+    color: #c99c00;
     &:after {
       color: black;
     }

@@ -122,7 +122,7 @@ if(document.querySelector('.shop-item.detail')) {
   const addToBasketButton = document.querySelector('.add-to-basket-button');
   addToBasketButton.addEventListener('click', (event) => {
     addToBasket(event.target.dataset.id);
-    cookie('basket', JSON.stringify(basketObject), 'flow-art.coach', '/', 2628000000);
+    cookie('basket', JSON.stringify(basketObject), 'stiftung-maennergesundheit.de', '/', 2628000000);
     addToBasketButton.classList.add('clicked');
     updateItemAmount();
     setTimeout(() => {
@@ -162,7 +162,7 @@ const showBasketItems = (init) => {
           amountSpan.innerHTML = basketObject[id];
           updatePrice(htmlElement);
           updateItemAmount();
-          cookie('basket', JSON.stringify(basketObject), 'flow-art.coach', '/', 2628000000);
+          cookie('basket', JSON.stringify(basketObject), 'stiftung-maennergesundheit.de', '/', 2628000000);
         });
         decreaseAmountButton.addEventListener('click', () => {
           basketObject[id] -= 1;
@@ -175,13 +175,13 @@ const showBasketItems = (init) => {
           amountSpan.innerHTML = basketObject[id];
           updatePrice(htmlElement);
           updateItemAmount();
-          cookie('basket', JSON.stringify(basketObject), 'flow-art.coach', '/', 2628000000);
+          cookie('basket', JSON.stringify(basketObject), 'stiftung-maennergesundheit.de', '/', 2628000000);
         });
         removeButton.addEventListener('click', () => {
           htmlElement.classList.remove('active');
           htmlElement.classList.remove('last');
           delete basketObject[id];
-          cookie('basket', JSON.stringify(basketObject), 'flow-art.coach', '/', 2628000000);
+          cookie('basket', JSON.stringify(basketObject), 'stiftung-maennergesundheit.de', '/', 2628000000);
           showBasketItems();
           updateBasketSum();
           updateItemAmount();
@@ -207,7 +207,7 @@ if(document.querySelector('.shop-submit')) {
   submitButton.addEventListener('click', (event) => {
     event.preventDefault();
     basketObject = {};
-    cookie('basket', false,'flow-art.coach','/');
+    cookie('basket', false,'stiftung-maennergesundheit.de','/');
     form.submit();
   })
 }
